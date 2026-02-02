@@ -1,0 +1,18 @@
+.meme {
+  position: relative;
+  display: inline-block;
+}
+
+.meme img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.meme h1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  cursor: move;
+}
