@@ -62,6 +62,14 @@ meme-app/
     ├── App.js            # Frontend Routing Matrix
     └── index.js
 ```
+
+---
+## Screenshots
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7de1ce67-e381-4b55-9ce7-1be74208ab0c" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6cc5febb-153f-4c03-8e5f-601ed9f44bcf" />
+
+
 ---
 
 Local Installation & Firing It Up
