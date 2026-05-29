@@ -69,23 +69,21 @@ To run this workspace workstation locally on your computer:
 
 Clone this repository link to your machine:
 
-```
+
 git clone [https://github.com/charuljain02/Meme-Generator-App.git](https://github.com/charuljain02/Meme-Generator-App.git)
-```
+
 Step inside the project root folder:
 
 ```
 cd meme-app
+```
 Install the node packages and engineering dependencies:
 
-```
-```
-npm install
-Fire up the local Webpack development server environment:
 
 ```
-```
+npm install
 npm start
+
 Open up your local link http://localhost:3000 inside your web browser to test!
 ```
 ---
