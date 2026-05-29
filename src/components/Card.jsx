@@ -1,26 +1,26 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Card, Button } from 'react-bootstrap';
+import './Card.css';
 
-
-const MemeCard = (props) => {
+const MemeCard = ({ img, title }) => {
     const navigate = useNavigate();
 
     return (
-        <div>
-            <Card style={{ width: "18rem", margin: "25px" }}>
-                <Card.Img variant="top" src={props.img} />
-                <Card.Body>
-                    <Card.Title>{props.title}</Card.Title>
-                    <Button
-                        onClick={() => navigate(`/edit?url=${props.img}`)}
-                        variant="primary"
-                    >
-                        Edit
-                    </Button>
-                </Card.Body>
-            </Card>
-        </div>
+        <Card classname="meme-card text-center shadow-sm">
+            <div classname="card-img-wrapper">
+                <Card.Img variant="top" src={img} classname="meme-card-img" loading="lazy" />
+            </div>
+            <Card.Body classname="bg-dark p-3">
+                <Card.Title classname="meme-card-title mb-3">{title}</Card.Title>
+                <Button 
+                    onClick={() => navigate(`/edit?url=${encodeURIComponent(img)}`)}
+                    classname="meme-card-btn w-100"
+                >
+                    ⚡ Edit Template
+                </Button>
+            </Card.Body>
+        </Card>
     );
 };
 

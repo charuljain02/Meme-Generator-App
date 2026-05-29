@@ -1,36 +1,30 @@
-/* Page background */
-.home-container {
-  padding: 30px;
+.home-bg {
+    background-color: #0f111a;
+    min-height: calc(100vh - 60px);
+    color: #ffffff;
 }
 
-/* Grid alignment */
-.home-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.search-bar-custom {
+    background: #151824 !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    color: #fff !important;
+    border-radius: 12px !important;
+    padding: 12px 20px !important;
 }
 
-/* Card wrapper spacing */
-.meme-col {
-  display: flex;
-  justify-content: center;
+.search-bar-custom:focus {
+    border-color: #00d2ff !important;
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.2) !important;
 }
 
-/* Card hover effect */
-.meme-card {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  border-radius: 12px;
+.dropzone-container {
+    background: rgba(0, 210, 255, 0.02);
+    border: 2px dashed rgba(0, 210, 255, 0.2);
+    border-radius: 16px;
+    transition: all 0.2s ease;
 }
 
-.meme-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-/* Meme image */
-.meme-card img {
-  height: 220px;
-  object-fit: cover;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+.dropzone-container:hover {
+    border-color: #00d2ff;
+    background: rgba(0, 210, 255, 0.04);
 }
